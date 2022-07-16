@@ -27,16 +27,8 @@ export const Upload: FC = () => {
     background-color: #a4797d;
   `;
 
-  return (
-    <CenterWrapper>
-      <Img src={darumachanPng} alt="user upload image"></Img>
-      <Button
-        onClick={() => {
-          navigate("gacha");
-        }}
-      >
-        送信する
-      </Button>
-    </CenterWrapper>
-  );
+  return <CenterWrapper>
+    <Img src={darumachanPng} alt="user upload image"></Img>
+    <Button onClick={() => { navigate('/gacha') }}>送信する</Button>
+  </CenterWrapper>
 };
