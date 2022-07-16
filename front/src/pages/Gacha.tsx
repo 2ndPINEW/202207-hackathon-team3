@@ -13,6 +13,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import gacha from "../assets/gacha.png";
+import gacha2 from "../assets/gacha2.png";
 export const Gacha: FC = () => {
   return (
     <Box mt={20} mb={10}>
@@ -26,6 +27,11 @@ export const Gacha: FC = () => {
       </Box>
 
       <Box height="50vh"></Box>
+      <Box>
+        <Center>
+          <Image width="300px" src={gacha2} />
+        </Center>
+      </Box>
       <Box mb={10} mt={10}>
         <Center>
           <Link href="recommend">
