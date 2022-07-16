@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import darumachanPng from '../assets/logo.png'
-
+import darumachanPng from "../assets/logo.png";
 
 export const Upload: FC = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const CenterWrapper = styled.div`
     display: flex;
@@ -13,7 +12,7 @@ export const Upload: FC = () => {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  `
+  `;
   const Img = styled.img`
     width: 80%;
     aspect-ratio: 1/1;
@@ -25,11 +24,19 @@ export const Upload: FC = () => {
     color: white;
     margin-top: 32px;
     border-radius: 100000000px;
-    background-color: #A4797D;
-  `
+    background-color: #a4797d;
+  `;
 
-  return <CenterWrapper>
-    <Img src={darumachanPng} alt="user upload image"></Img>
-    <Button onClick={() => { navigate('gacha') }}>送信する</Button>
-  </CenterWrapper>
+  return (
+    <CenterWrapper>
+      <Img src={darumachanPng} alt="user upload image"></Img>
+      <Button
+        onClick={() => {
+          navigate("gacha");
+        }}
+      >
+        送信する
+      </Button>
+    </CenterWrapper>
+  );
 };
