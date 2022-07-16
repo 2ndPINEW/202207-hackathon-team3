@@ -11,6 +11,8 @@ import { Upload } from "./pages/Upload";
 import { Recommend } from "./pages/Recommend";
 import { Ranking } from "./pages/contests/Rankings";
 // import { ApplicationBasePage } from "./pages/Application/ApplicationBase";
+import { Header } from "./component/Header";
+import { Footer } from "./component/Footer";
 
 function App() {
   return (
