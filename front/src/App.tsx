@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
+import { HomePage } from "./pages/Home";
+import { Upload } from "./pages/Upload";
+import { Recommend } from "./pages/Recommend";
+import { Ranking } from "./pages/contests/Rankings";
+// import { ApplicationBasePage } from "./pages/Application/ApplicationBase";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage />}></Route>
+          <Route path="/upload" element={<Upload />}></Route>
+          <Route path="/recommend" element={<Recommend />}></Route>
+          <Route path="/ranking" element={<Ranking />}></Route>
+          {/* <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/auth/signup" element={<SignupPage />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
