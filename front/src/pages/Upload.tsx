@@ -30,6 +30,6 @@ export const Upload: FC = () => {
 
   return <CenterWrapper>
     <Img src={darumachanPng} alt="user upload image"></Img>
-    <Button onClick={() => { navigate('gacha') }}>送信する</Button>
+    <Button onClick={() => { navigate('/gacha') }}>送信する</Button>
   </CenterWrapper>
 };

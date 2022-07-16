@@ -105,7 +105,7 @@ export const HomePage: FC = () => {
       </Counts>
       <Comment>いい写真撮れた！！！！！ドヤ！！</Comment>
       <End>
-        <GoUploadButton onClick={() => { navigate('upload') }}>
+        <GoUploadButton onClick={() => { navigate('/upload') }}>
           <UserIconImg src={logo} alt="user upload image"></UserIconImg>
           <ButtonLabelText>投稿</ButtonLabelText>
         </GoUploadButton>
