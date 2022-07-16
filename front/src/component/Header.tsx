@@ -28,7 +28,7 @@ export const Header = (props: any) => {
       <Flex align="center" mr={5}>
         <Link href="/">
           <Heading as="h1" size="lg" letterSpacing={"tighter"} cursor="pointer">
-            福フォト
+            ふくフォト
           </Heading>
         </Link>
       </Flex>

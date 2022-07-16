@@ -10,6 +10,7 @@ import { HomePage } from "./pages/Home";
 import { Upload } from "./pages/Upload";
 import { Recommend } from "./pages/Recommend";
 import { Ranking } from "./pages/contests/Rankings";
+import { Gacha } from "./pages/Gacha";
 // import { ApplicationBasePage } from "./pages/Application/ApplicationBase";
 import { Header } from "./component/Header";
 import { Footer } from "./component/Footer";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/upload" element={<Upload />}></Route>
           <Route path="/recommend" element={<Recommend />}></Route>
           <Route path="/ranking" element={<Ranking />}></Route>
+          <Route path="/gacha" element={<Gacha />}></Route>
           {/* <Route path="/settings" element={<SettingsPage />} />
             <Route path="/auth/signup" element={<SignupPage />} /> */}
         </Routes>
