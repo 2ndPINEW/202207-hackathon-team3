@@ -7,9 +7,11 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Image,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
+import logo from "../assets/logo-circle.png";
 
 const Logo = (props: any) => {
   return (
@@ -77,7 +79,7 @@ export const Footer = () => {
         justify={"center"}
         align={"center"}
       >
-        <Logo />
+        <Image src={logo} width="80px" />
         <Stack direction={"row"} spacing={6}>
           <Link href="/">
             <Text>Home</Text>
@@ -108,8 +110,8 @@ export const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
+          <Text>© 2022 ふくフォト. All rights reserved</Text>
+          {/* <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
@@ -119,7 +121,7 @@ export const Footer = () => {
             <SocialButton label={"Instagram"} href={"#"}>
               <FaInstagram />
             </SocialButton>
-          </Stack>
+          </Stack> */}
         </Container>
       </Box>
     </Box>
